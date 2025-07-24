@@ -1,0 +1,46 @@
+# .NET LLM-Optimized Documentation
+> Token-dense, machine-readable .NET feature documentation designed for AI assistants and zero-shot code generation.
+
+## Getting Started
+- [Feature index](index.json): HAL JSON entry point for all .NET features with navigation links
+- [Usage guide](usage.md): Detailed workflows and best practices for AI assistants  
+- [Testing methodology](testing.md): Validation framework for zero-shot code generation
+
+## Key Data Sources
+- [CLI features](cli/index.json): Command-line tools, options, and execution patterns
+- [Library features](libraries/index.json): APIs, classes, and framework capabilities
+- [C# features](csharp/index.json): Language constructs, syntax, and compiler behavior
+
+## Area-Specific Navigation
+- **CLI**: Tools, commands, build features, container operations
+- **Libraries**: APIs, collections, serialization, cryptography, diagnostics
+- **C#**: Language keywords, syntax patterns, compilation behavior
+
+## Data Format
+- **JSON files**: HAL+JSON navigation with structured metadata for feature discovery
+- **Markdown files**: Token-dense feature documentation optimized for LLM consumption  
+- **Navigation pattern**: llms.txt → HAL+JSON → Token-Dense Markdown
+
+## Token-Dense Format Design
+Each feature documented with:
+- **Metadata**: Version, status, dependencies, scope
+- **Semantic Profile**: Behavioral characteristics, performance, constraints
+- **Syntax Patterns**: Formal syntax with concrete examples
+- **Integration Points**: System interactions and cross-feature relationships
+- **Common Patterns**: Real-world usage scenarios
+- **Diagnostic Markers**: Error codes, warnings, troubleshooting
+
+## Testing Approach
+Documentation validated through zero-shot code generation tests:
+- **Feature Isolation**: Each feature testable independently
+- **Compilation Success**: Generated code compiles without errors
+- **Runtime Correctness**: Code produces expected behavior  
+- **Idiomatic Usage**: Follows .NET best practices
+
+## Coverage Focus
+Currently covering .NET 10 features as validation of approach:
+- New CLI commands and tools (dotnet tool exec, file-based apps, etc.)
+- Library enhancements (CompareOptions.NumericOrdering, async ZIP APIs, etc.)
+- Language improvements (async patterns, span optimizations, etc.)
+
+This structured approach enables AI assistants to generate correct, idiomatic .NET code for features they haven't seen before by providing comprehensive behavioral and integration context beyond basic syntax.

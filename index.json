@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "title": ".NET LLM-Optimized Documentation",
+    "description": "Token-dense, machine-readable .NET feature documentation for AI assistants",
+    "version": "1.0",
+    "lastUpdated": "2025-01-24",
+    "format": "HAL+JSON"
+  },
+  "_links": {
+    "self": {
+      "href": "/index.json",
+      "title": "Main feature index"
+    },
+    "cli": {
+      "href": "/cli/index.json", 
+      "title": "CLI commands and tools",
+      "description": "Command-line interface features, tools, and execution patterns"
+    },
+    "libraries": {
+      "href": "/libraries/index.json",
+      "title": "Library APIs and frameworks", 
+      "description": "Framework APIs, classes, collections, serialization, cryptography"
+    },
+    "csharp": {
+      "href": "/csharp/index.json",
+      "title": "C# language features",
+      "description": "Language constructs, syntax patterns, and compilation behavior"
+    },
+    "usage": {
+      "href": "/usage.md",
+      "title": "Usage guide for AI assistants"
+    },
+    "testing": {
+      "href": "/testing.md", 
+      "title": "Testing methodology for zero-shot code generation"
+    }
+  },
+  "areas": {
+    "cli": {
+      "description": "Command-line interface features",
+      "featureCount": 4,
+      "examples": ["dotnet tool exec", "file-based apps", "shell completion", "command aliases"]
+    },
+    "libraries": {
+      "description": "Framework APIs and libraries", 
+      "featureCount": 2,
+      "examples": ["CompareOptions.NumericOrdering", "OrderedDictionary enhancements"]
+    },
+    "csharp": {
+      "description": "C# language constructs",
+      "featureCount": 0,
+      "examples": []
+    }
+  },
+  "coverage": {
+    "dotnetVersions": [".NET 10"],
+    "focus": "New features validation",
+    "testingApproach": "Zero-shot code generation",
+    "formatOptimization": "LLM token density"
+  }
+}

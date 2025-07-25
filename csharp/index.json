@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "title": "C# Language Features",
+    "description": "C# language constructs, syntax patterns, and compilation behavior",
+    "version": "1.0",
+    "lastUpdated": "2025-01-24",
+    "format": "HAL+JSON"
+  },
+  "_links": {
+    "self": {
+      "href": "/csharp/index.json",
+      "title": "C# language feature index"
+    },
+    "parent": {
+      "href": "/index.json",
+      "title": "Main documentation index"
+    }
+  },
+  "_embedded": {
+    "features": []
+  },
+  "summary": {
+    "totalFeatures": 0,
+    "categories": [],
+    "dotnetVersions": [".NET 10"],
+    "primaryUseCase": "Language-level feature documentation for code generation",
+    "status": "Placeholder - features to be added"
+  }
+}

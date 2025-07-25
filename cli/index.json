@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "title": "CLI Commands and Tools",
+    "description": "Command-line interface features, tools, and execution patterns for .NET",
+    "version": "1.0",
+    "lastUpdated": "2025-01-24",
+    "format": "HAL+JSON"
+  },
+  "_links": {
+    "self": {
+      "href": "/cli/index.json",
+      "title": "CLI feature index"
+    },
+    "parent": {
+      "href": "/index.json",
+      "title": "Main documentation index"
+    },
+    "file-based-apps": {
+      "href": "/cli/file-based-apps.md",
+      "title": "File-based apps with publish support",
+      "description": "Single-file C# applications with direct compilation and publishing"
+    }
+  },
+  "_embedded": {
+    "features": [
+      {
+        "id": "file-based-apps",
+        "title": "File-based apps with publish support",
+        "category": "Build/Publishing",
+        "introduced": ".NET 10",
+        "status": "Stable",
+        "summary": "Direct compilation and publishing of single .cs files with native AOT support",
+        "primaryCommands": ["dotnet publish", "dotnet run", "dotnet build"],
+        "keyCapabilities": [
+          "Single-file compilation",
+          "Native AOT by default", 
+          "Project references via directives",
+          "Shebang shell execution",
+          "Runtime path access"
+        ],
+        "_links": {
+          "details": {
+            "href": "/cli/file-based-apps.md",
+            "title": "Complete feature documentation"
+          }
+        }
+      }
+    ]
+  },
+  "summary": {
+    "totalFeatures": 1,
+    "categories": ["Build/Publishing"],
+    "dotnetVersions": [".NET 10"],
+    "primaryUseCase": "Script-like development with full .NET capabilities"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "title": "Library APIs and Frameworks",
+    "description": "Framework APIs, classes, collections, serialization, cryptography for .NET",
+    "version": "1.0",
+    "lastUpdated": "2025-01-24",
+    "format": "HAL+JSON"
+  },
+  "_links": {
+    "self": {
+      "href": "/libraries/index.json",
+      "title": "Library feature index"
+    },
+    "parent": {
+      "href": "/index.json",
+      "title": "Main documentation index"
+    },
+    "numeric-ordering": {
+      "href": "/libraries/numeric-ordering.md",
+      "title": "CompareOptions.NumericOrdering",
+      "description": "Natural numeric ordering for string comparisons"
+    }
+  },
+  "_embedded": {
+    "features": [
+      {
+        "id": "numeric-ordering",
+        "title": "CompareOptions.NumericOrdering",
+        "category": "Globalization/String Comparison",
+        "introduced": ".NET 10",
+        "status": "Stable",
+        "assembly": "System.Runtime.dll",
+        "namespace": "System.Globalization",
+        "summary": "Natural numeric ordering for string comparisons, treating numeric portions by value",
+        "keyCapabilities": [
+          "Numeric value comparison in strings",
+          "Mixed content handling",
+          "Culture-sensitive parsing",
+          "Leading zero normalization",
+          "Performance optimized"
+        ],
+        "primaryTypes": ["CompareOptions"],
+        "integrationPoints": [
+          "StringComparer.Create",
+          "Array.Sort",
+          "LINQ OrderBy",
+          "CultureInfo.CompareInfo"
+        ],
+        "_links": {
+          "details": {
+            "href": "/libraries/numeric-ordering.md",
+            "title": "Complete API documentation"
+          }
+        }
+      }
+    ]
+  },
+  "summary": {
+    "totalFeatures": 1,
+    "categories": ["Globalization/String Comparison"],
+    "assemblies": ["System.Runtime.dll"],
+    "dotnetVersions": [".NET 10"],
+    "primaryUseCase": "Natural sorting and comparison of strings with embedded numbers"
+  }
+}
